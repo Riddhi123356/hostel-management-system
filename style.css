@@ -1,0 +1,67 @@
+body {
+font-size:20px;
+font-family: Arial, sans-serif;
+background-color: #F4F7FB;
+}
+
+.pending { color: orange; font-weight: bold; }
+.solved { color: green; font-weight: bold; }
+
+button {
+background-color:green;
+color:white;
+border-radius:2px;
+padding: 6px 12px;
+cursor:pointer;
+}
+
+table {
+border-collapse:collapse;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+td,th {
+border:1px solid #ddd;
+text-align:left;
+padding:10px;
+}
+
+th {
+background-color: #f2f2f2;
+font-weight:bold;
+}
+
+tr {
+background-color:white;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 40px;
+ }
+
+
+.nav {
+cursor:pointer;
+}
+
+.show {
+margin:20px;
+}
+
+lable {
+font-weight:bold;
+font-size:16px;
+}
+
+.proof,.marksheet,.receipt,.card,.attachment{
+background-color:white;
+color:black;
+}
+
+
+
+
+
+
+

@@ -136,6 +136,7 @@ body {
         <a href="admin_refund.php">Refund Requests</a>
         <a href="admin_changeInformation.php">Change Information</a>
         <a href="admin_icard.php">Request for Icard</a>
+        <a href="admin_add_student.php">Add student</a>
         <a href="logout.php" class="btn-logout">Logout</a>
     </div>
 
@@ -188,6 +189,16 @@ body {
                     <button class="btn btn-view">View</button>
                 </a>
             </div>
+             <div class="card">
+                <h3>Students</h3>
+                <p>Add new students and remove existing student accounts.
+                 Manage registration numbers and login access.</p>
+                <br>
+                <a href="admin_icard.php">
+                    <button class="btn btn-view">View</button>
+                </a>
+            </div>
+
 
         </div>
     </div>

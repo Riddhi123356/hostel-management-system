@@ -7,7 +7,7 @@
 
 <div class="profile">
     <br>
-    <center><strong><?php echo $_SESSION['name']; ?></strong></center><br>
+    <center><strong><?php echo $_SESSION['regno']; ?></strong></center><br>
     <span style="color: #2ecc71;font-size: 14px;">● Online</span><br><br>
 </div>
 <nav class="sidebar" id="sidebar">

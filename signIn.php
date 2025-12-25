@@ -6,13 +6,11 @@ $error = "";
 
 if (isset($_POST['signin'])) {
 
-    $name     = $_POST['name'];
     $regno    = $_POST['regno'];
     $password = $_POST['password'];
 
     $sql = "SELECT * FROM users 
-            WHERE name='$name' 
-            AND regno='$regno' 
+            WHERE regno='$regno' 
             AND password='$password'";
 
     $result = $conn->query($sql);
@@ -21,12 +19,11 @@ if (isset($_POST['signin'])) {
         $row = $result->fetch_assoc();
 
         $_SESSION['regno'] = $row['regno'];
-        $_SESSION['name']  = $row['name'];
 
         header("Location: dashboard.php");
         exit();
     } else {
-        $error = "Invalid Name, Registration Number or Password";
+        $error = "Invalid Registration Number or Password";
     }
 }
 ?>
@@ -79,7 +76,6 @@ button{
     <?php if($error!="") echo "<p class='error'>$error</p>"; ?>
 
     <form method="post">
-        <input type="text" name="name" placeholder="Full Name" required>
         <input type="text" name="regno" placeholder="Registration Number" required>
         <input type="password" name="password" placeholder="Hostel Password" required>
         <button type="submit" name="signin">Sign In</button>

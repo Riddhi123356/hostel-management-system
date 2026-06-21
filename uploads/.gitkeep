@@ -1,0 +1,5 @@
+This folder stores attachments uploaded via the Gate Pass / Leave form.
+Make sure this folder is writable by your web server (XAMPP's Apache
+process needs write permission here for file uploads to work).
+
+This file just keeps the empty folder present in the project zip.
